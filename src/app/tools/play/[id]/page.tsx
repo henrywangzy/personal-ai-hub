@@ -12,11 +12,8 @@ interface PlayPageProps {
 // 生成静态路径
 export async function generateStaticParams() {
   const tools = toolsData as Tool[];
-  return tools
-    .filter((tool) => tool.type === "iframe")
-    .map((tool) => ({
-      id: tool.id,
-    }));
+  // Generate all IDs - page will handle non-iframe types with notFound()
+  return tools.map((tool) => ({ id: tool.id }));
 }
 
 // 生成元数据

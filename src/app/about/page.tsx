@@ -1,29 +1,33 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Mail, MessageSquare, Star, Code, GraduationCap, Lightbulb } from "lucide-react";
+import { Mail, MessageSquare, Star, Gamepad2, BookImage, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "关于我",
-  description: "了解更多关于我的信息，以及可提供的服务",
+  description: "泡泡妈，AI教育探索者，致力于把AI变成孩子的学习伙伴",
 };
 
-const services = [
+// 成果数据
+const achievements = [
   {
-    icon: Code,
-    title: "H5 定制开发",
-    description: "教育类 H5 游戏、营销活动页面、小程序开发",
+    icon: Gamepad2,
+    count: "7+",
+    title: "H5单词游戏",
+    description: "贪吃蛇、赛车、飞机射击、打地鼠等趣味学习游戏",
   },
   {
-    icon: Lightbulb,
-    title: "AI 技术顾问",
-    description: "企业 AI 应用方案咨询、AI 工具选型建议",
+    icon: BookImage,
+    count: "10+",
+    title: "教育闪卡系列",
+    description: "英语启蒙、古诗词、成语等主题闪卡",
   },
   {
-    icon: GraduationCap,
-    title: "企业培训",
-    description: "AI 工具使用培训、Prompt Engineering 工作坊",
+    icon: Sparkles,
+    count: "13+",
+    title: "实践教程",
+    description: "Claude Code、NotebookLM、AI绘图等工具教程",
   },
 ];
 
@@ -49,32 +53,37 @@ export default function AboutPage() {
         <h2 className="text-xl font-bold mb-4">关于我</h2>
         <div className="prose prose-gray dark:prose-invert max-w-none">
           <p className="text-muted-foreground leading-relaxed">
-            Hi，我是一名专注于 AI 与教育交叉领域的独立开发者。拥有多年的前端开发经验，
-            擅长使用现代 Web 技术构建高质量的产品。
+            Hi，我是泡泡妈，一个5岁男孩的妈妈，也是一名AI教育探索者。
+            我的初心很简单：<strong className="text-foreground">把AI变成孩子的学习伙伴，变成自己的生活搭档</strong>。
           </p>
           <p className="text-muted-foreground leading-relaxed mt-4">
-            我相信 AI 将深刻改变教育的未来，致力于探索如何用技术让学习更高效、更有趣。
-            在这里，你可以找到我精心整理的 AI 提示词、教程文章，以及一些有趣的教育小工具。
+            作为一个非技术背景的妈妈，我用Claude Code从零开发了7款H5单词游戏，用AI绘图工具制作了
+            10多套教育闪卡，把枯燥的学习变成了孩子期待的游戏时光。
+          </p>
+          <p className="text-muted-foreground leading-relaxed mt-4">
+            我相信<strong className="text-foreground">"创造力平权"</strong>——AI让普通人也能实现曾经只有专业团队才能完成的创作。
+            在这里，我会分享我的AI实践经验，希望能帮助更多家长用AI为教育减负，让学习像游戏一样有趣。
           </p>
         </div>
       </section>
 
-      {/* 服务清单 */}
+      {/* 成果展示 */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold mb-4">可提供的服务</h2>
+        <h2 className="text-xl font-bold mb-4">我的成果</h2>
         <div className="grid gap-4">
-          {services.map((service) => (
+          {achievements.map((item) => (
             <div
-              key={service.title}
+              key={item.title}
               className="flex gap-4 p-4 rounded-xl border bg-card"
             >
-              <div className="h-12 w-12 flex-shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <service.icon className="h-6 w-6 text-primary" />
+              <div className="h-14 w-14 flex-shrink-0 rounded-lg bg-primary/10 flex flex-col items-center justify-center">
+                <item.icon className="h-5 w-5 text-primary" />
+                <span className="text-xs font-bold text-primary mt-1">{item.count}</span>
               </div>
               <div>
-                <h3 className="font-semibold mb-1">{service.title}</h3>
+                <h3 className="font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">
-                  {service.description}
+                  {item.description}
                 </p>
               </div>
             </div>

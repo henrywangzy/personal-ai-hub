@@ -36,10 +36,11 @@ export async function generateMetadata({
 }
 
 export default function PostPage({ params }: PostPageProps) {
-  const posts = postsData as (BlogPost & { content: string })[];
+  const posts = postsData as (BlogPost & { content?: string })[];
   const post = posts.find((p) => p.slug === params.slug);
 
-  if (!post) {
+  // If no post found or post has external URL (no content), show 404
+  if (!post || post.url || !post.content) {
     notFound();
   }
 

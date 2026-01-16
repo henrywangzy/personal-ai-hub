@@ -11,9 +11,8 @@ interface PlayPageProps {
 
 export async function generateStaticParams() {
   const flashcards = flashcardsData as Flashcard[];
-  return flashcards
-    .filter((card) => card.type === "iframe")
-    .map((card) => ({ id: card.id }));
+  // Generate all IDs - page will handle non-iframe types with notFound()
+  return flashcards.map((card) => ({ id: card.id }));
 }
 
 export async function generateMetadata({

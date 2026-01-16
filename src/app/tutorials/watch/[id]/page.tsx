@@ -11,9 +11,8 @@ interface WatchPageProps {
 
 export async function generateStaticParams() {
   const tutorials = tutorialsData as Tutorial[];
-  return tutorials
-    .filter((t) => t.type === "iframe")
-    .map((t) => ({ id: t.id }));
+  // Generate all IDs - page will handle non-iframe types with notFound()
+  return tutorials.map((t) => ({ id: t.id }));
 }
 
 export async function generateMetadata({

@@ -1,29 +1,40 @@
 import Link from "next/link";
-import { ArrowRight, Clock } from "lucide-react";
-import { BlogPost } from "@/types";
+import { ArrowRight, Clock, ExternalLink } from "lucide-react";
 
-// 临时占位数据，后续从 MDX 文件读取
-const mockPosts: BlogPost[] = [
+// 首页展示的3篇爆款文章
+interface FeaturedPost {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  tags: string[];
+  url: string;  // 外部链接
+}
+
+const featuredPosts: FeaturedPost[] = [
   {
-    slug: "getting-started-with-claude",
-    title: "Claude 3.5 Sonnet 完全指南：从入门到精通",
-    description: "深入了解 Claude 的能力边界，掌握高效的 Prompt 技巧",
-    date: "2024-01-15",
-    tags: ["Claude", "AI", "教程"],
+    id: "notebooklm-education",
+    title: "NotebookLM：2025年最强学习教育搭子，你和孩子的第二大脑",
+    description: "从李白到鸡兔同笼，DeepResearch、视频播客、PPT、思维导图一键生成",
+    date: "2025-01-10",
+    tags: ["NotebookLM", "AI教育"],
+    url: "https://mp.weixin.qq.com/s/5pHKIM02aVEMGzC_E1hSjQ",
   },
   {
-    slug: "midjourney-prompts",
-    title: "Midjourney V6 提示词实战：打造专业级 AI 绘画",
-    description: "50+ 经典提示词模板，让你的创作效率翻倍",
-    date: "2024-01-12",
-    tags: ["Midjourney", "AI绘画"],
+    id: "nanobanana-education",
+    title: "NanoBanana Pro：别把它当玩具，一文教你变成儿童教育新质生产力",
+    description: "12种案例提示词：汉语拼音、古诗词、立体几何、英语短语可视化教学",
+    date: "2025-01-08",
+    tags: ["NanoBanana", "AI绘图"],
+    url: "https://mp.weixin.qq.com/s/U3dXsoj4Col8yTZd6kcSGg",
   },
   {
-    slug: "ai-education-future",
-    title: "AI 如何重塑教育：一位一线教师的实践思考",
-    description: "从课堂到家庭，AI 正在改变我们的学习方式",
-    date: "2024-01-10",
-    tags: ["教育", "AI应用"],
+    id: "claudecode-guide",
+    title: "2026 AI实践(1)：Claude Code快速上手，我的踩坑及实践指南",
+    description: "安装配置、MCP使用、Skill开发，从零到开发H5单词游戏全流程",
+    date: "2026-01-05",
+    tags: ["Claude Code", "开发实践"],
+    url: "https://mp.weixin.qq.com/s/p74MqqDIevQ3V8Nkmav81g",
   },
 ];
 
@@ -44,16 +55,21 @@ export function LatestFeed() {
 
         {/* 文章列表 */}
         <div className="space-y-3">
-          {mockPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="block p-4 rounded-xl bg-card border hover:shadow-md transition-all duration-200"
+          {featuredPosts.map((post) => (
+            <a
+              key={post.id}
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-4 rounded-xl bg-card border hover:shadow-md transition-all duration-200 group"
             >
               <div className="flex flex-col gap-2">
-                <h3 className="font-semibold text-base line-clamp-1">
-                  {post.title}
-                </h3>
+                <div className="flex items-start justify-between gap-2">
+                  <h3 className="font-semibold text-base line-clamp-1 flex-1">
+                    {post.title}
+                  </h3>
+                  <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                </div>
                 <p className="text-sm text-muted-foreground line-clamp-2">
                   {post.description}
                 </p>
@@ -74,7 +90,7 @@ export function LatestFeed() {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

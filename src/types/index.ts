@@ -61,6 +61,7 @@ export interface BlogPost {
   date: string;
   tags: string[];
   coverImage?: string;
+  url?: string;  // 外部链接（如微信公众号文章）
 }
 
 // 导航项
@@ -74,6 +75,7 @@ export interface NavItem {
 export interface SiteConfig {
   name: string;
   slogan: string;
+  description: string;  // 个人介绍
   avatar: string;
   social: {
     wechat?: string;

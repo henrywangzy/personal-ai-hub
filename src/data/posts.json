@@ -1,29 +1,106 @@
 [
   {
-    "slug": "getting-started-with-claude",
-    "title": "Claude 3.5 Sonnet 完全指南：从入门到精通",
-    "description": "深入了解 Claude 的能力边界，掌握高效的 Prompt 技巧，让 AI 成为你的得力助手",
-    "date": "2024-01-15",
-    "tags": ["Claude", "AI", "教程"],
-    "coverImage": "/images/blog/claude-guide.jpg",
-    "content": "## 什么是 Claude？\n\nClaude 是 Anthropic 公司开发的大语言模型，以其强大的推理能力和安全性著称。\n\n## 核心能力\n\n### 1. 长文本处理\nClaude 支持超长上下文窗口，可以处理整本书籍或大型代码库。\n\n### 2. 代码能力\n- 代码生成与解释\n- Bug 分析与修复\n- 代码重构建议\n\n### 3. 写作辅助\nClaude 擅长各类文体写作，从商业邮件到创意小说。\n\n## 高效使用技巧\n\n1. **明确指令**：清晰描述你的需求\n2. **提供上下文**：给出足够的背景信息\n3. **分步骤**：复杂任务拆解成小步骤\n\n## 总结\n\n掌握这些技巧，你就能充分发挥 Claude 的潜力！"
+    "slug": "claudecode-guide",
+    "title": "2026 AI实践(1)：Claude Code快速上手，我的踩坑及实践指南",
+    "description": "安装配置、MCP使用、Skill开发，从零到开发H5单词游戏全流程",
+    "date": "2026-01-05",
+    "tags": ["Claude Code", "开发实践"],
+    "url": "https://mp.weixin.qq.com/s/p74MqqDIevQ3V8Nkmav81g"
   },
   {
-    "slug": "midjourney-prompts-guide",
-    "title": "Midjourney V6 提示词实战：打造专业级 AI 绘画",
-    "description": "50+ 经典提示词模板，让你的创作效率翻倍，从入门到精通的完整指南",
-    "date": "2024-01-12",
-    "tags": ["Midjourney", "AI绘画", "教程"],
-    "coverImage": "/images/blog/midjourney-guide.jpg",
-    "content": "## Midjourney V6 新特性\n\nV6 版本带来了革命性的提升：\n\n- 更精准的文字理解\n- 更自然的人物表情\n- 更细腻的光影效果\n\n## 基础提示词结构\n\n```\n[主体] + [风格] + [光线] + [构图] + [参数]\n```\n\n## 实战案例\n\n### 写实人像\n```\nPortrait photo of a young woman, soft natural lighting, \nshallow depth of field, shot on Canon EOS R5 --ar 3:4 --v 6\n```\n\n### 赛博朋克场景\n```\nCyberpunk cityscape at night, neon lights, \nrain reflections, cinematic --ar 16:9 --v 6\n```\n\n## 进阶技巧\n\n1. 使用 `--style raw` 获得更真实的效果\n2. 调整 `--stylize` 参数控制艺术化程度\n3. 善用否定提示词排除不想要的元素"
+    "slug": "notebooklm-education",
+    "title": "NotebookLM：2025年最强学习教育搭子，你和孩子的第二大脑",
+    "description": "从李白到鸡兔同笼，DeepResearch、视频播客、PPT、思维导图一键生成",
+    "date": "2025-01-10",
+    "tags": ["NotebookLM", "AI教育"],
+    "url": "https://mp.weixin.qq.com/s/5pHKIM02aVEMGzC_E1hSjQ"
   },
   {
-    "slug": "ai-education-future",
-    "title": "AI 如何重塑教育：一位一线教师的实践思考",
-    "description": "从课堂到家庭，AI 正在改变我们的学习方式，探索教育的未来形态",
-    "date": "2024-01-10",
-    "tags": ["教育", "AI应用", "思考"],
-    "coverImage": "/images/blog/ai-education.jpg",
-    "content": "## 引言\n\n作为一名在教育一线工作多年的教师，我亲眼见证了 AI 技术对教育带来的深刻变革。\n\n## AI 在教育中的应用\n\n### 1. 个性化学习路径\n\nAI 可以根据每个学生的学习进度和特点，定制专属的学习计划。\n\n### 2. 智能答疑系统\n\n学生可以随时向 AI 提问，获得即时、耐心的解答。\n\n### 3. 作业批改辅助\n\nAI 可以快速批改客观题，让教师有更多时间关注学生的思维过程。\n\n## 挑战与思考\n\n- 如何平衡 AI 辅助与自主思考？\n- 如何培养学生正确使用 AI 的能力？\n- 教师的角色如何转变？\n\n## 我的实践\n\n在我的课堂上，我鼓励学生：\n1. 先独立思考，再寻求 AI 帮助\n2. 验证 AI 给出的答案\n3. 学习如何提出好问题\n\n## 结语\n\nAI 不会取代教师，但会使教育变得更加高效和有趣。"
+    "slug": "nanobanana-education",
+    "title": "NanoBanana Pro：别把它当玩具，一文教你变成儿童教育新质生产力",
+    "description": "12种案例提示词：汉语拼音、古诗词、立体几何、英语短语可视化教学",
+    "date": "2025-01-08",
+    "tags": ["NanoBanana", "AI绘图"],
+    "url": "https://mp.weixin.qq.com/s/U3dXsoj4Col8yTZd6kcSGg"
+  },
+  {
+    "slug": "bilingual-discovery",
+    "title": "双语情景大发现闪卡：31个主题，英语启蒙随处可及",
+    "description": "全景大图，单词有联系，覆盖生活方方面面，高清打印便携",
+    "date": "2025-01-06",
+    "tags": ["闪卡", "英语启蒙"],
+    "url": "https://mp.weixin.qq.com/s/FqLxx4QLX9HFMmMu5LihjA"
+  },
+  {
+    "slug": "zootopia-bilingual",
+    "title": "复刻疯狂动物城2双语情景卡，3-6岁英语启蒙神器",
+    "description": "用Seedream 4.5制作，打印出来娃玩疯了",
+    "date": "2025-01-04",
+    "tags": ["闪卡", "英语启蒙"],
+    "url": "https://mp.weixin.qq.com/s/83e0Zh-k5k98d0dniJ8nRg"
+  },
+  {
+    "slug": "tang-poetry",
+    "title": "国风唐诗卡片：一图胜千言，告别死记硬背理解诗意",
+    "description": "用Seedream 4.0制作水墨风格古诗卡片，开启视觉感知记忆",
+    "date": "2025-01-02",
+    "tags": ["闪卡", "古诗词"],
+    "url": "https://mp.weixin.qq.com/s/LrnIMujr8OyeFSgiI9Oebw"
+  },
+  {
+    "slug": "oxford-words",
+    "title": "牛津树单词情景卡：让Kipper一家走进孩子的生活",
+    "description": "用Lovart制作牛津树配套单词卡，情景化学习更高效",
+    "date": "2024-12-28",
+    "tags": ["闪卡", "牛津树"],
+    "url": "https://mp.weixin.qq.com/s/goWeCfNZeL4sUi1xrC56pg"
+  },
+  {
+    "slug": "theme-words",
+    "title": "主题单词闪卡：轻松搞定小学常见1000词",
+    "description": "用Lovart制作日常场景主题卡，跟娃一起轻松英语互动",
+    "date": "2024-12-25",
+    "tags": ["闪卡", "英语学习"],
+    "url": "https://mp.weixin.qq.com/s/BxlKtqS1qPYOintjSJ4JBA"
+  },
+  {
+    "slug": "idiom-illustration",
+    "title": "成语主题插画：视觉引导学习效率倍增",
+    "description": "用Lovart把成语变成超生动的插画，孩子学习效率提升几倍",
+    "date": "2024-12-22",
+    "tags": ["闪卡", "语文学习"],
+    "url": "https://mp.weixin.qq.com/s/T5dnHI8SzoNjKwHOwsVbQg"
+  },
+  {
+    "slug": "peppa-words",
+    "title": "小猪佩奇单词情景卡：跟佩奇一起玩单词过家家",
+    "description": "用即梦制作孩子喜欢的IP角色单词卡",
+    "date": "2024-12-18",
+    "tags": ["闪卡", "英语启蒙"],
+    "url": "https://mp.weixin.qq.com/s/ykuXCHK7Z6Ad0P7K-h4RDQ"
+  },
+  {
+    "slug": "cute-illustration",
+    "title": "可爱单词插画闪卡：开启英语寻宝游戏",
+    "description": "用Lovart制作超可爱风格，专为低龄儿童设计",
+    "date": "2024-12-15",
+    "tags": ["闪卡", "英语启蒙"],
+    "url": "https://mp.weixin.qq.com/s/MoaPXc-PcOXYQZ0WLUZx4w"
+  },
+  {
+    "slug": "audio-training",
+    "title": "听觉训练主题探索卡：提升专注力和语言敏感度",
+    "description": "用NanoBanana解锁150张听觉训练卡片",
+    "date": "2024-12-12",
+    "tags": ["闪卡", "思维训练"],
+    "url": "https://mp.weixin.qq.com/s/C3da74Y3nQTztxkrp8j9Ng"
+  },
+  {
+    "slug": "why-cards",
+    "title": "\"为什么\"主题探索卡：激发表达力、想象力、逻辑力",
+    "description": "用Seedream 4.0解锁100张探索卡片",
+    "date": "2024-12-10",
+    "tags": ["闪卡", "思维训练"],
+    "url": "https://mp.weixin.qq.com/s/COIlx60vxbId3n3IQ-bzrA"
   }
 ]

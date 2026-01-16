@@ -11,9 +11,8 @@ interface PlayPageProps {
 
 export async function generateStaticParams() {
   const apps = appsData as App[];
-  return apps
-    .filter((app) => app.type === "iframe")
-    .map((app) => ({ id: app.id }));
+  // Generate all IDs - page will handle non-iframe types with notFound()
+  return apps.map((app) => ({ id: app.id }));
 }
 
 export async function generateMetadata({

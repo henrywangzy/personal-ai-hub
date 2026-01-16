@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Clock, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight, ExternalLink } from "lucide-react";
 import { BlogPost } from "@/types";
 
 interface PostCardProps {
@@ -7,9 +7,18 @@ interface PostCardProps {
 }
 
 export function PostCard({ post }: PostCardProps) {
+  // 判断是外部链接还是站内链接
+  const isExternal = !!post.url;
+  const href = isExternal ? post.url! : `/blog/${post.slug}`;
+
+  const CardWrapper = isExternal ? "a" : Link;
+  const linkProps = isExternal
+    ? { href, target: "_blank", rel: "noopener noreferrer" }
+    : { href };
+
   return (
-    <Link
-      href={`/blog/${post.slug}`}
+    <CardWrapper
+      {...linkProps}
       className="group block p-4 md:p-6 rounded-xl border bg-card hover:shadow-md transition-all duration-200"
     >
       <div className="flex flex-col gap-3">
@@ -42,10 +51,14 @@ export function PostCard({ post }: PostCardProps) {
             {post.date}
           </span>
           <span className="flex items-center gap-1 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-            阅读全文 <ArrowRight className="h-3 w-3" />
+            {isExternal ? (
+              <>查看原文 <ExternalLink className="h-3 w-3" /></>
+            ) : (
+              <>阅读全文 <ArrowRight className="h-3 w-3" /></>
+            )}
           </span>
         </div>
       </div>
-    </Link>
+    </CardWrapper>
   );
 }

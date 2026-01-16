@@ -1,62 +1,102 @@
 [
   {
-    "id": "peppa-pig-words",
-    "title": "小猪佩奇单词闪卡",
-    "description": "跟着小猪佩奇学英语，动画场景记单词",
-    "thumbnail": "/images/flashcards/peppa.png",
-    "category": "英语",
-    "count": 120,
-    "type": "iframe",
-    "url": "https://example.com/peppa-flashcards"
-  },
-  {
     "id": "oxford-words",
-    "title": "牛津树单词闪卡",
-    "description": "牛津阅读树配套单词，分级记忆更高效",
+    "title": "牛津树单词情景卡",
+    "description": "让Kipper一家的日常走进孩子的生活，情景化单词学习",
     "thumbnail": "/images/flashcards/oxford.png",
-    "category": "英语",
-    "count": 200,
-    "type": "iframe",
-    "url": "https://example.com/oxford-flashcards"
+    "category": "英语启蒙",
+    "count": 50,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/goWeCfNZeL4sUi1xrC56pg"
   },
   {
-    "id": "idioms",
-    "title": "成语闪卡",
-    "description": "每日一成语，积累国学素养",
-    "thumbnail": "/images/flashcards/idioms.png",
-    "category": "语文",
-    "count": 300,
-    "type": "iframe",
-    "url": "https://example.com/idioms-flashcards"
+    "id": "bilingual-discovery",
+    "title": "双语情景大发现闪卡",
+    "description": "31个主题全景图，覆盖生活方方面面，英语启蒙随处可及",
+    "thumbnail": "/images/flashcards/bilingual.png",
+    "category": "英语启蒙",
+    "count": 31,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/FqLxx4QLX9HFMmMu5LihjA"
   },
   {
-    "id": "why-100k",
-    "title": "十万个为什么闪卡",
-    "description": "满足孩子的好奇心，探索科学奥秘",
-    "thumbnail": "/images/flashcards/why.png",
-    "category": "科学",
-    "count": 150,
-    "type": "iframe",
-    "url": "https://example.com/why-flashcards"
+    "id": "theme-words",
+    "title": "主题单词闪卡",
+    "description": "轻松搞定小学常见1000词，日常场景互动学习",
+    "thumbnail": "/images/flashcards/theme.png",
+    "category": "英语学习",
+    "count": 100,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/BxlKtqS1qPYOintjSJ4JBA"
   },
   {
-    "id": "math-formula",
-    "title": "数学公式闪卡",
-    "description": "小学到初中核心公式，一卡搞定",
-    "thumbnail": "/images/flashcards/math.png",
-    "category": "数学",
-    "count": 80,
-    "type": "iframe",
-    "url": "https://example.com/math-flashcards"
-  },
-  {
-    "id": "ancient-poetry",
-    "title": "古诗词闪卡",
-    "description": "小学必背古诗75首，配图助记",
+    "id": "tang-poetry",
+    "title": "国风唐诗卡片",
+    "description": "水墨风格，一图胜千言，告别死记硬背理解诗意",
     "thumbnail": "/images/flashcards/poetry.png",
-    "category": "语文",
-    "count": 75,
-    "type": "iframe",
-    "url": "https://example.com/poetry-flashcards"
+    "category": "古诗词",
+    "count": 30,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/LrnIMujr8OyeFSgiI9Oebw"
+  },
+  {
+    "id": "idiom-illustration",
+    "title": "成语主题插画",
+    "description": "视觉引导学习效率倍增，把成语变成生动的插画",
+    "thumbnail": "/images/flashcards/idiom.png",
+    "category": "语文学习",
+    "count": 50,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/T5dnHI8SzoNjKwHOwsVbQg"
+  },
+  {
+    "id": "peppa-words",
+    "title": "小猪佩奇单词情景卡",
+    "description": "孩子喜欢的IP角色，跟佩奇一起玩单词过家家游戏",
+    "thumbnail": "/images/flashcards/peppa.png",
+    "category": "英语启蒙",
+    "count": 40,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/ykuXCHK7Z6Ad0P7K-h4RDQ"
+  },
+  {
+    "id": "audio-training",
+    "title": "听觉训练主题探索卡",
+    "description": "提升娃专注力和语言敏感度，150张主题探索卡片",
+    "thumbnail": "/images/flashcards/audio.png",
+    "category": "思维训练",
+    "count": 150,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/C3da74Y3nQTztxkrp8j9Ng"
+  },
+  {
+    "id": "why-cards",
+    "title": "\"为什么\"主题探索卡",
+    "description": "激发娃的表达力、想象力、逻辑力，100张探索卡片",
+    "thumbnail": "/images/flashcards/why.png",
+    "category": "思维训练",
+    "count": 100,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/COIlx60vxbId3n3IQ-bzrA"
+  },
+  {
+    "id": "zootopia-bilingual",
+    "title": "疯狂动物城2双语情景卡",
+    "description": "复刻疯狂动物城2，3-6岁英语启蒙神器",
+    "thumbnail": "/images/flashcards/zootopia.png",
+    "category": "英语启蒙",
+    "count": 36,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/83e0Zh-k5k98d0dniJ8nRg"
+  },
+  {
+    "id": "cute-illustration",
+    "title": "可爱单词插画闪卡",
+    "description": "超可爱插画风格，开启英语寻宝游戏，专为低龄儿童设计",
+    "thumbnail": "/images/flashcards/cute.png",
+    "category": "英语启蒙",
+    "count": 60,
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/MoaPXc-PcOXYQZ0WLUZx4w"
   }
 ]

@@ -1,56 +1,65 @@
 [
   {
-    "id": "word-match",
+    "id": "snake-words",
+    "title": "贪吃蛇单词大冒险",
+    "description": "操控贪吃蛇吃掉正确单词，边玩边学，内置小学1-6年级词库",
+    "thumbnail": "/images/apps/snake-words.png",
+    "category": "英语",
+    "type": "iframe",
+    "url": "https://snackwords.ppmaiedu.cn/"
+  },
+  {
+    "id": "car-words",
+    "title": "赛车单词大冒险",
+    "description": "控制赛车收集单词牌，每收集对一个自动播放发音和例句",
+    "thumbnail": "/images/apps/car-words.png",
+    "category": "英语",
+    "type": "iframe",
+    "url": "http://carwords.ppmaiedu.cn/"
+  },
+  {
+    "id": "plane-words",
+    "title": "飞机射击单词游戏",
+    "description": "射击游戏+单词学习，让孩子在游戏中快乐记单词",
+    "thumbnail": "/images/apps/plane-words.png",
+    "category": "英语",
+    "type": "iframe",
+    "url": "https://planegame.ppmaiedu.cn/"
+  },
+  {
+    "id": "flip-words",
+    "title": "记忆翻牌单词游戏",
+    "description": "认单词+锻炼记忆能力+游戏乐趣三合一",
+    "thumbnail": "/images/apps/flip-words.png",
+    "category": "英语",
+    "type": "iframe",
+    "url": "https://memorycardwords.ppmaiedu.cn/"
+  },
+  {
+    "id": "connect-words",
+    "title": "记忆连线单词游戏",
+    "description": "单词认知趣味性倍增，专注力记忆力双双起飞",
+    "thumbnail": "/images/apps/connect-words.png",
+    "category": "英语",
+    "type": "iframe",
+    "url": "http://linewords.ppmaiedu.cn/"
+  },
+  {
+    "id": "whack-words",
+    "title": "打地鼠单词游戏",
+    "description": "经典打地鼠玩法，快速反应中记住单词",
+    "thumbnail": "/images/apps/whack-words.png",
+    "category": "英语",
+    "type": "iframe",
+    "url": "https://dishuword.ppmaiedu.cn/"
+  },
+  {
+    "id": "match-words",
     "title": "单词消消乐",
-    "description": "趣味英语单词配对游戏，边玩边记单词",
-    "thumbnail": "/images/apps/word-match.png",
+    "description": "消除游戏+单词配对，轻松有趣学英语",
+    "thumbnail": "/images/apps/match-words.png",
     "category": "英语",
     "type": "iframe",
-    "url": "https://example.com/apps/word-match"
-  },
-  {
-    "id": "math-adventure",
-    "title": "数学大冒险",
-    "description": "闯关式数学练习，培养数学思维",
-    "thumbnail": "/images/apps/math-adventure.png",
-    "category": "数学",
-    "type": "iframe",
-    "url": "https://example.com/apps/math-adventure"
-  },
-  {
-    "id": "spelling-bee",
-    "title": "拼写小蜜蜂",
-    "description": "听音拼写练习，提升英语听力和拼写能力",
-    "thumbnail": "/images/apps/spelling-bee.png",
-    "category": "英语",
-    "type": "iframe",
-    "url": "https://example.com/apps/spelling-bee"
-  },
-  {
-    "id": "mental-math",
-    "title": "速算挑战",
-    "description": "限时心算练习，提升计算速度",
-    "thumbnail": "/images/apps/mental-math.png",
-    "category": "数学",
-    "type": "iframe",
-    "url": "https://example.com/apps/mental-math"
-  },
-  {
-    "id": "sentence-builder",
-    "title": "句子工厂",
-    "description": "英语造句练习，掌握语法结构",
-    "thumbnail": "/images/apps/sentence-builder.png",
-    "category": "英语",
-    "type": "iframe",
-    "url": "https://example.com/apps/sentence-builder"
-  },
-  {
-    "id": "memory-cards",
-    "title": "记忆翻牌",
-    "description": "经典记忆力游戏，锻炼大脑记忆",
-    "thumbnail": "/images/apps/memory-cards.png",
-    "category": "思维",
-    "type": "iframe",
-    "url": "https://example.com/apps/memory-cards"
+    "url": "https://wordsxiaoxiaole.ppmaiedu.cn/"
   }
 ]
