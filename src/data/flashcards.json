@@ -1,0 +1,62 @@
+[
+  {
+    "id": "peppa-pig-words",
+    "title": "小猪佩奇单词闪卡",
+    "description": "跟着小猪佩奇学英语，动画场景记单词",
+    "thumbnail": "/images/flashcards/peppa.png",
+    "category": "英语",
+    "count": 120,
+    "type": "iframe",
+    "url": "https://example.com/peppa-flashcards"
+  },
+  {
+    "id": "oxford-words",
+    "title": "牛津树单词闪卡",
+    "description": "牛津阅读树配套单词，分级记忆更高效",
+    "thumbnail": "/images/flashcards/oxford.png",
+    "category": "英语",
+    "count": 200,
+    "type": "iframe",
+    "url": "https://example.com/oxford-flashcards"
+  },
+  {
+    "id": "idioms",
+    "title": "成语闪卡",
+    "description": "每日一成语，积累国学素养",
+    "thumbnail": "/images/flashcards/idioms.png",
+    "category": "语文",
+    "count": 300,
+    "type": "iframe",
+    "url": "https://example.com/idioms-flashcards"
+  },
+  {
+    "id": "why-100k",
+    "title": "十万个为什么闪卡",
+    "description": "满足孩子的好奇心，探索科学奥秘",
+    "thumbnail": "/images/flashcards/why.png",
+    "category": "科学",
+    "count": 150,
+    "type": "iframe",
+    "url": "https://example.com/why-flashcards"
+  },
+  {
+    "id": "math-formula",
+    "title": "数学公式闪卡",
+    "description": "小学到初中核心公式，一卡搞定",
+    "thumbnail": "/images/flashcards/math.png",
+    "category": "数学",
+    "count": 80,
+    "type": "iframe",
+    "url": "https://example.com/math-flashcards"
+  },
+  {
+    "id": "ancient-poetry",
+    "title": "古诗词闪卡",
+    "description": "小学必背古诗75首，配图助记",
+    "thumbnail": "/images/flashcards/poetry.png",
+    "category": "语文",
+    "count": 75,
+    "type": "iframe",
+    "url": "https://example.com/poetry-flashcards"
+  }
+]

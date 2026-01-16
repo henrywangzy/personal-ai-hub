@@ -1,0 +1,50 @@
+[
+  {
+    "id": "memory-cards",
+    "title": "记忆闪卡",
+    "thumbnail": "/images/tools/memory-cards.png",
+    "type": "iframe",
+    "url": "https://example.com/memory-cards",
+    "description": "用闪卡高效记忆知识点，支持自定义卡组"
+  },
+  {
+    "id": "pomodoro",
+    "title": "番茄时钟",
+    "thumbnail": "/images/tools/pomodoro.png",
+    "type": "iframe",
+    "url": "https://example.com/pomodoro",
+    "description": "专注学习的番茄工作法计时器"
+  },
+  {
+    "id": "word-puzzle",
+    "title": "单词消消乐",
+    "thumbnail": "/images/tools/word-puzzle.png",
+    "type": "iframe",
+    "url": "https://example.com/word-puzzle",
+    "description": "趣味英语单词游戏，边玩边学"
+  },
+  {
+    "id": "math-game",
+    "title": "数学冒险",
+    "thumbnail": "/images/tools/math-game.png",
+    "type": "iframe",
+    "url": "https://example.com/math-game",
+    "description": "寓教于乐的数学闯关游戏"
+  },
+  {
+    "id": "claude-prompt-helper",
+    "title": "Prompt 助手",
+    "thumbnail": "/images/tools/prompt-helper.png",
+    "type": "link",
+    "url": "https://claude.ai",
+    "description": "Claude Skills - 智能提示词生成器"
+  },
+  {
+    "id": "ai-image-generator",
+    "title": "AI 绘图工具",
+    "thumbnail": "/images/tools/ai-image.png",
+    "type": "link",
+    "url": "https://midjourney.com",
+    "description": "快速生成 AI 图像的在线工具"
+  }
+]

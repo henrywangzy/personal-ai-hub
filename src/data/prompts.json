@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "title": "专业文章写作助手",
+    "description": "帮你撰写结构清晰、逻辑严谨的专业文章",
+    "content": "你是一位专业的内容创作者。请帮我撰写一篇关于 [主题] 的文章。\n\n要求：\n1. 结构清晰，包含引言、正文（3-5个要点）、结论\n2. 语言专业但易于理解\n3. 每个要点配合具体案例说明\n4. 字数控制在 1500-2000 字\n\n请先给出文章大纲，确认后再撰写全文。",
+    "tags": ["写作", "内容创作"],
+    "model": "Claude"
+  },
+  {
+    "id": "2",
+    "title": "代码审查专家",
+    "description": "深度审查代码，发现潜在问题和优化空间",
+    "content": "你是一位资深的代码审查专家。请审查以下代码：\n\n```\n[粘贴代码]\n```\n\n请从以下维度进行分析：\n1. 代码质量：命名规范、代码结构、可读性\n2. 潜在 Bug：边界条件、空值处理、异常处理\n3. 性能优化：时间复杂度、内存使用、可优化点\n4. 安全问题：注入风险、敏感信息暴露\n5. 最佳实践：设计模式、代码复用\n\n请给出具体的改进建议和修改后的代码示例。",
+    "tags": ["编程", "代码审查"],
+    "model": "Claude"
+  },
+  {
+    "id": "3",
+    "title": "Midjourney 写实人像",
+    "description": "生成高质量写实风格人像照片",
+    "content": "Portrait photo of [描述人物特征], professional photography, soft natural lighting, shallow depth of field, shot on Canon EOS R5, 85mm lens, f/1.4 aperture, golden hour, photorealistic, highly detailed skin texture, 8k resolution --ar 3:4 --v 6 --style raw",
+    "tags": ["Midjourney", "人像", "写实"],
+    "model": "Midjourney"
+  },
+  {
+    "id": "4",
+    "title": "Midjourney 赛博朋克场景",
+    "description": "创建未来感十足的赛博朋克城市场景",
+    "content": "Cyberpunk cityscape at night, neon lights reflecting on wet streets, flying cars, holographic advertisements, dense urban architecture, rain, cinematic atmosphere, blade runner style, ultra detailed, volumetric lighting, 8k --ar 16:9 --v 6",
+    "tags": ["Midjourney", "赛博朋克", "场景"],
+    "model": "Midjourney"
+  },
+  {
+    "id": "5",
+    "title": "英语口语教练",
+    "description": "模拟真实对话场景，提升口语能力",
+    "content": "你是一位经验丰富的英语口语教练。我们将进行角色扮演练习。\n\n场景：[选择场景，如：咖啡店点餐/工作面试/旅游问路]\n\n规则：\n1. 用自然的口语对话，避免书面语\n2. 如果我有语法或表达错误，在对话后温和指出\n3. 每轮对话后提供 2-3 个可替代的地道表达\n4. 适时引入新词汇和常用短语\n\n让我们开始吧！请你先开始对话。",
+    "tags": ["教育", "英语", "口语"],
+    "model": "GPT"
+  },
+  {
+    "id": "6",
+    "title": "产品需求分析师",
+    "description": "将模糊需求转化为清晰的 PRD 文档",
+    "content": "你是一位资深产品经理。我有一个产品想法：[描述你的想法]\n\n请帮我完成以下分析：\n\n1. **需求澄清**：提出 5 个关键问题帮我明确需求\n2. **用户画像**：定义 2-3 个核心用户群体\n3. **核心功能**：列出 MVP 必须具备的功能（按优先级排序）\n4. **用户故事**：为每个核心功能编写用户故事\n5. **验收标准**：定义功能的验收条件\n\n请一步步引导我完成整个分析过程。",
+    "tags": ["产品", "需求分析"],
+    "model": "Claude"
+  },
+  {
+    "id": "7",
+    "title": "学习计划制定器",
+    "description": "制定个性化的高效学习计划",
+    "content": "你是一位学习规划专家。请帮我制定学习计划。\n\n学习目标：[你想学什么]\n当前水平：[初学者/有基础/进阶]\n可用时间：[每天/每周可投入的时间]\n学习周期：[希望多长时间达成目标]\n\n请提供：\n1. 分阶段学习路线图\n2. 每周具体学习任务\n3. 推荐学习资源（书籍/课程/实践项目）\n4. 里程碑检验标准\n5. 常见瓶颈及突破方法",
+    "tags": ["教育", "学习规划"],
+    "model": "GPT"
+  },
+  {
+    "id": "8",
+    "title": "Midjourney 3D 图标",
+    "description": "生成精美的 3D 风格应用图标",
+    "content": "3D app icon of [图标主题], glossy material, soft gradient background, subtle shadow, rounded corners, minimalist design, clay render style, C4D, Blender, soft studio lighting, centered composition, icon design --ar 1:1 --v 6 --style raw",
+    "tags": ["Midjourney", "图标", "3D"],
+    "model": "Midjourney"
+  }
+]
