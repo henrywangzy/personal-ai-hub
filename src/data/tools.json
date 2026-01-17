@@ -1,50 +1,50 @@
 [
   {
-    "id": "memory-cards",
-    "title": "记忆闪卡",
-    "thumbnail": "/images/tools/memory-cards.png",
-    "type": "iframe",
-    "url": "https://example.com/memory-cards",
-    "description": "用闪卡高效记忆知识点，支持自定义卡组"
-  },
-  {
-    "id": "pomodoro",
-    "title": "番茄时钟",
-    "thumbnail": "/images/tools/pomodoro.png",
-    "type": "iframe",
-    "url": "https://example.com/pomodoro",
-    "description": "专注学习的番茄工作法计时器"
-  },
-  {
-    "id": "word-puzzle",
-    "title": "单词消消乐",
-    "thumbnail": "/images/tools/word-puzzle.png",
-    "type": "iframe",
-    "url": "https://example.com/word-puzzle",
-    "description": "趣味英语单词游戏，边玩边学"
-  },
-  {
-    "id": "math-game",
-    "title": "数学冒险",
-    "thumbnail": "/images/tools/math-game.png",
-    "type": "iframe",
-    "url": "https://example.com/math-game",
-    "description": "寓教于乐的数学闯关游戏"
-  },
-  {
     "id": "claude-prompt-helper",
-    "title": "Prompt 助手",
+    "title": "Claude AI 对话助手",
     "thumbnail": "/images/tools/prompt-helper.png",
     "type": "link",
     "url": "https://claude.ai",
-    "description": "Claude Skills - 智能提示词生成器"
+    "description": "Anthropic官方AI对话工具，强大的思维伙伴"
   },
   {
-    "id": "ai-image-generator",
-    "title": "AI 绘图工具",
-    "thumbnail": "/images/tools/ai-image.png",
+    "id": "doubao",
+    "title": "豆包 - 字节AI助手",
+    "thumbnail": "/images/tools/doubao.png",
     "type": "link",
-    "url": "https://midjourney.com",
-    "description": "快速生成 AI 图像的在线工具"
+    "url": "https://www.doubao.com",
+    "description": "字节跳动AI助手，支持图片生成和对话"
+  },
+  {
+    "id": "seedream",
+    "title": "Seedream 即梦AI",
+    "thumbnail": "/images/tools/seedream.png",
+    "type": "link",
+    "url": "https://jimeng.jianying.com",
+    "description": "字节出品AI绘图工具，生成高质量图片"
+  },
+  {
+    "id": "lovart",
+    "title": "Lovart AI绘图",
+    "thumbnail": "/images/tools/lovart.png",
+    "type": "link",
+    "url": "https://www.lovart.ai",
+    "description": "专业AI绘图平台，适合教育闪卡制作"
+  },
+  {
+    "id": "notebooklm",
+    "title": "NotebookLM",
+    "thumbnail": "/images/tools/notebooklm.png",
+    "type": "link",
+    "url": "https://notebooklm.google.com",
+    "description": "Google出品AI笔记工具，学习教育神器"
+  },
+  {
+    "id": "nanobanana",
+    "title": "NanoBanana Pro",
+    "thumbnail": "/images/tools/nanobanana.png",
+    "type": "link",
+    "url": "https://nanobanana.com",
+    "description": "AI图片生成工具，儿童教育新质生产力"
   }
 ]
