@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
 export function Hero() {
@@ -26,15 +25,10 @@ export function Hero() {
             {siteConfig.slogan}
           </p>
 
-          {/* CTA 按钮 */}
-          <div className="flex flex-col sm:flex-row gap-3 pt-2">
-            <Button size="lg" className="min-w-[140px] h-12">
-              订阅知识星球
-            </Button>
-            <Button size="lg" variant="outline" className="min-w-[140px] h-12">
-              关注公众号
-            </Button>
-          </div>
+          {/* 公众号信息 */}
+          <p className="text-sm text-muted-foreground pt-2">
+            公众号：泡泡妈学AI
+          </p>
         </div>
       </div>
     </section>
