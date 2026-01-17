@@ -53,10 +53,6 @@ export default function AboutPage() {
         <h2 className="text-xl font-bold mb-4">关于我</h2>
         <div className="prose prose-gray dark:prose-invert max-w-none">
           <p className="text-muted-foreground leading-relaxed">
-            Hi，我是泡泡妈，一个5岁男孩的妈妈，也是一名AI教育探索者。
-            我的初心很简单：<strong className="text-foreground">把AI变成孩子的学习伙伴，变成自己的生活搭档</strong>。
-          </p>
-          <p className="text-muted-foreground leading-relaxed mt-4">
             作为一个非技术背景的妈妈，我用Claude Code从零开发了7款H5单词游戏，用AI绘图工具制作了
             10多套教育闪卡，把枯燥的学习变成了孩子期待的游戏时光。
           </p>
