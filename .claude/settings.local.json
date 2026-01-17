@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(npx next dev -p 3001)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
