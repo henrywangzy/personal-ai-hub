@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MessageSquareText, GraduationCap, BookOpen, Gamepad2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { LatestFeed } from "@/components/home";
 
@@ -62,17 +61,12 @@ export default function HomePage() {
           <h1 className="text-2xl font-bold mb-2">{siteConfig.name}</h1>
 
           {/* Slogan */}
-          <p className="text-muted-foreground mb-6">{siteConfig.slogan}</p>
+          <p className="text-muted-foreground mb-4">{siteConfig.slogan}</p>
 
-          {/* CTA 按钮 */}
-          <div className="flex gap-3">
-            <Button size="lg" className="px-6">
-              订阅知识星球
-            </Button>
-            <Button size="lg" variant="outline" className="px-6">
-              关注公众号
-            </Button>
-          </div>
+          {/* 公众号信息 */}
+          <p className="text-sm text-muted-foreground">
+            公众号：泡泡妈学AI
+          </p>
         </div>
 
         {/* 右侧：2x2 宫格 */}

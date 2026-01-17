@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Mail, MessageSquare, Star, Gamepad2, BookImage, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Gamepad2, BookImage, Sparkles } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -90,62 +89,11 @@ export default function AboutPage() {
       {/* 联系方式 */}
       <section className="mb-12">
         <h2 className="text-xl font-bold mb-4">联系我</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {/* 微信 */}
-          <div className="p-6 rounded-xl border bg-card text-center">
-            <MessageSquare className="h-8 w-8 mx-auto mb-3 text-green-500" />
-            <h3 className="font-semibold mb-2">微信公众号</h3>
-            <div className="h-32 w-32 mx-auto bg-muted rounded-lg flex items-center justify-center">
-              {siteConfig.social.wechat ? (
-                <Image
-                  src={siteConfig.social.wechat}
-                  alt="微信公众号"
-                  width={128}
-                  height={128}
-                  className="rounded-lg"
-                />
-              ) : (
-                <span className="text-sm text-muted-foreground">二维码</span>
-              )}
-            </div>
-          </div>
-
-          {/* 知识星球 */}
-          <div className="p-6 rounded-xl border bg-card text-center">
-            <Star className="h-8 w-8 mx-auto mb-3 text-yellow-500" />
-            <h3 className="font-semibold mb-2">知识星球</h3>
-            <div className="h-32 w-32 mx-auto bg-muted rounded-lg flex items-center justify-center">
-              {siteConfig.social.zhishixingqiu ? (
-                <Image
-                  src={siteConfig.social.zhishixingqiu}
-                  alt="知识星球"
-                  width={128}
-                  height={128}
-                  className="rounded-lg"
-                />
-              ) : (
-                <span className="text-sm text-muted-foreground">二维码</span>
-              )}
-            </div>
-          </div>
+        <div className="p-6 rounded-xl border bg-card text-center">
+          <p className="text-muted-foreground">
+            公众号：<span className="font-semibold text-foreground">泡泡妈学AI</span>
+          </p>
         </div>
-
-        {/* 邮箱 */}
-        {siteConfig.social.email && (
-          <div className="mt-4 p-4 rounded-xl border bg-card flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5 text-muted-foreground" />
-              <span className="text-sm">{siteConfig.social.email}</span>
-            </div>
-            <Button
-              variant="outline"
-              size="sm"
-              asChild
-            >
-              <a href={`mailto:${siteConfig.social.email}`}>发送邮件</a>
-            </Button>
-          </div>
-        )}
       </section>
     </div>
   );
