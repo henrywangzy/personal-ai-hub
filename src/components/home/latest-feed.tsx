@@ -13,6 +13,14 @@ interface FeaturedPost {
 
 const featuredPosts: FeaturedPost[] = [
   {
+    id: "claudecode-practical-guide",
+    title: "《Claude Code 小白实战宝典》完整教程",
+    description: "一文说清安装配置+开发+插件技能+上线部署，从零开始的完整实战指南",
+    date: "2026-01-18",
+    tags: ["Claude Code", "开发实践"],
+    url: "https://mp.weixin.qq.com/s/tPN_me01r1fYcfPXmJCg8A",
+  },
+  {
     id: "notebooklm-education",
     title: "NotebookLM：2025年最强学习教育搭子，你和孩子的第二大脑",
     description: "从李白到鸡兔同笼，DeepResearch、视频播客、PPT、思维导图一键生成",
@@ -27,14 +35,6 @@ const featuredPosts: FeaturedPost[] = [
     date: "2025-01-08",
     tags: ["NanoBanana", "AI绘图"],
     url: "https://mp.weixin.qq.com/s/U3dXsoj4Col8yTZd6kcSGg",
-  },
-  {
-    id: "claudecode-guide",
-    title: "2026 AI实践(1)：Claude Code快速上手，我的踩坑及实践指南",
-    description: "安装配置、MCP使用、Skill开发，从零到开发H5单词游戏全流程",
-    date: "2026-01-05",
-    tags: ["Claude Code", "开发实践"],
-    url: "https://mp.weixin.qq.com/s/p74MqqDIevQ3V8Nkmav81g",
   },
 ];
 

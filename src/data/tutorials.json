@@ -10,16 +10,6 @@
     "url": "https://mp.weixin.qq.com/s/tPN_me01r1fYcfPXmJCg8A"
   },
   {
-    "id": "claudecode-guide",
-    "title": "Claude Code 快速上手实践指南",
-    "description": "安装配置、MCP使用、Skill开发，从零到开发H5单词游戏全流程",
-    "thumbnail": "/images/tutorials/claudecode.png",
-    "duration": "图文教程",
-    "category": "Claude Code",
-    "type": "link",
-    "url": "https://mp.weixin.qq.com/s/p74MqqDIevQ3V8Nkmav81g"
-  },
-  {
     "id": "notebooklm-education",
     "title": "NotebookLM 教育应用完全指南",
     "description": "DeepResearch、视频播客、PPT、思维导图、信息图一键生成",

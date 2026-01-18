@@ -8,14 +8,6 @@
     "url": "https://mp.weixin.qq.com/s/tPN_me01r1fYcfPXmJCg8A"
   },
   {
-    "slug": "claudecode-guide",
-    "title": "2026 AI实践(1)：Claude Code快速上手，我的踩坑及实践指南",
-    "description": "安装配置、MCP使用、Skill开发，从零到开发H5单词游戏全流程",
-    "date": "2026-01-05",
-    "tags": ["Claude Code", "开发实践"],
-    "url": "https://mp.weixin.qq.com/s/p74MqqDIevQ3V8Nkmav81g"
-  },
-  {
     "slug": "notebooklm-education",
     "title": "NotebookLM：2025年最强学习教育搭子，你和孩子的第二大脑",
     "description": "从李白到鸡兔同笼，DeepResearch、视频播客、PPT、思维导图一键生成",
