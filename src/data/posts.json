@@ -1,5 +1,13 @@
 [
   {
+    "slug": "claudecode-practical-guide",
+    "title": "《Claude Code 小白实战宝典》：一文说清安装配置+开发+插件技能+上线部署",
+    "description": "从零开始的 Claude Code 完整实战教程，覆盖环境搭建、MCP 配置、Skill 开发、项目部署全流程",
+    "date": "2026-01-18",
+    "tags": ["Claude Code", "开发实践", "部署"],
+    "url": "https://mp.weixin.qq.com/s/tPN_me01r1fYcfPXmJCg8A"
+  },
+  {
     "slug": "claudecode-guide",
     "title": "2026 AI实践(1)：Claude Code快速上手，我的踩坑及实践指南",
     "description": "安装配置、MCP使用、Skill开发，从零到开发H5单词游戏全流程",

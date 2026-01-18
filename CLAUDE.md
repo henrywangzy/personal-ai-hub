@@ -2,21 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## 开发语言要求
+## 开发指导原则
 
-0.开发过程，对于用户提出的问题，你必须用中文进行回答。
-1.对于用户提出的模糊要求，你必须从产品可行性、交互操作等方面先引导用户说清楚更具体的需求，然后形成需求PRD文档。
-2.在用户确认需求PRD文档后，你必须先用markdown语言去设计大概的UI轮廓样式，让用户去确认。
-3.用户确认UI轮廓样式符合要求后，你必须再用html设计一个逼真的移动端的UI页面，UI页面要穷尽每种点击操作能达到的效果，也就是说，你的UI界面必须是多个。
-4.设计移动端UI过程，你必须让各种元素布局紧凑一些，不允许在上下左右留大片空白。
-5.你在设计移动端UI的过程中，必须考虑到在小手机屏幕上能否完整显示的问题。尤其是靠近屏幕下端，有些内容可能会被掩盖住。
-6.你设计的移动端UI，对各种组件样式、字体样式，你必须从整体结构布局角度出发，考虑是否美观。
-4.你必须等用户确认移动端UI样式符合预期后，再进入开发。
-5.进入开发时，你必须考虑文件之间的协同和联动，不要把所有内容都装到一个html文件中，这样会使得html文件过于庞大，后续不易修改。比如你可以灵活搭配使用js、css等文件，但你全程必须展站在移动端能否正常显示和运行的角度去开发。
-6.每开发完一个页面，你必须对当前页面的进行点击测试，而且一定要以手机端浏览器能正常运行为主。当该页面能正常点击后，你再进入下一个页面开发。
-7.在每次测试过程中，你必须用playwright mcp认真检查，尤其要注意有没有代码错误。
-8.测试过程中，可能会生成大量测试文件，对于这些测试文件，你必须按时间戳单独建立文件夹，把测试文件放在单独文件夹中，不允许直接把测试放在项目主文件夹中。
-9.开发完成后，用户会进行测试，对于用户提出的每条修改要求，你都必须一一检查落实，不允许只修改其中一条 就匆匆忙忙认为完成了所有的修改。
+- **语言**: 所有交互使用中文
+- **移动端优先**: 始终从移动端视角设计和开发
+  - 布局紧凑，避免大面积留白
+  - 按钮/点击区域最小高度 44px
+  - 注意屏幕下端内容被遮挡问题
+- **渐进式开发**: 需求 → UI 设计 → 用户确认 → 开发 → 测试
+- **组件化思维**: 避免单文件过大，合理拆分组件和样式文件
+- **测试规范**:
+  - 使用 Playwright MCP 测试，每个页面开发完成后必须测试
+  - 测试文件独立存放于 `tests/YYYYMMDD_HHMMSS/` 格式的时间戳文件夹
+- **完整性**: 对用户提出的每条修改要求都必须逐一检查落实
 
 ---
 
@@ -231,23 +229,49 @@ src/
 - 所有内容数据都存储在 `src/data/*.json` 文件中
 - 页面组件从 JSON 文件读取数据进行渲染
 - 内容更新只需修改 JSON,无需改动代码
+- **优势**:
+  - 内容与代码分离，非技术人员可更新内容
+  - 版本控制友好，所有变更可追溯
+  - 构建时类型检查，保证数据一致性
 
-**2. 统一的播放/详情页模式**
+**2. 静态站点生成 (SSG)**
+- 项目配置为静态导出 (`output: 'export'` in next.config.mjs)
+- 所有页面在构建时预渲染为静态 HTML
+- **优势**: 极快的加载速度、零服务器成本、易于部署到 CDN/Vercel
+- **限制**: 无法使用服务端运行时功能 (API Routes, ISR 等)
+- **图片处理**: `next/image` 已配置 `unoptimized: true` 以支持静态导出
+
+**3. 统一的播放/详情页模式**
 - 使用动态路由 `[id]` 或 `[slug]` 处理详情页
 - 支持 `iframe` 和 `link` 两种类型:
   - `iframe`: 内嵌展示(闪卡、教程、应用、工具)
   - `link`: 外部跳转
 
-**3. 布局复用**
+**4. 布局复用**
 - `src/app/layout.tsx` 定义全局布局
 - 包含: Navbar(导航栏) + Main(内容区) + Footer(页脚) + FAB(悬浮按钮) + Toaster(通知)
 - 所有页面自动继承此布局
 
-**4. 响应式设计**
+**5. 响应式设计**
 - 移动端优先(Mobile-First)
 - 使用 Tailwind CSS 的响应式断点
 - 移动端: 汉堡菜单 + 紧凑布局
 - 桌面端: 水平导航 + 宽松布局
+
+---
+
+## 数据文件速查
+
+| 内容类型 | 文件路径 | 接口类型 |
+|---------|---------|---------|
+| 提示词 | `src/data/prompts.json` | `Prompt[]` |
+| 教育闪卡 | `src/data/flashcards.json` | `Flashcard[]` |
+| AI教程 | `src/data/tutorials.json` | `Tutorial[]` |
+| H5应用 | `src/data/apps.json` | `App[]` |
+| 工具集 | `src/data/tools.json` | `Tool[]` |
+| 博客文章 | `src/data/posts.json` | `BlogPost[]` |
+| 站点配置 | `src/config/site.ts` | `SiteConfig` |
+| 导航菜单 | `src/config/site.ts` | `NavItem[]` |
 
 ---
 
@@ -502,6 +526,38 @@ npm install
 
 # 检查 TypeScript 类型错误
 npx tsc --noEmit
+
+# 验证 JSON 格式
+npx jsonlint src/data/prompts.json
+```
+
+### 常见问题详解
+
+**Q: 样式突然丢失或不生效**
+```bash
+# 解决方案：清除缓存并重启
+rm -rf .next
+npm run dev
+```
+
+**Q: 构建失败 "output export requires images.unoptimized"**
+A: 这是正常配置。项目已在 `next.config.mjs` 中正确设置了静态导出所需的配置。
+
+**Q: JSON 数据更新后页面未变化**
+1. 检查 JSON 格式是否正确（可用在线 JSON 校验工具）
+2. 确认文件已保存
+3. 重启开发服务器
+4. 硬刷新浏览器 (Ctrl+Shift+R / Cmd+Shift+R)
+
+**Q: npm install 失败**
+```bash
+# 方案1: 使用国内镜像
+npm config set registry https://registry.npmmirror.com
+npm install
+
+# 方案2: 清除后重装
+rm -rf node_modules package-lock.json
+npm install
 ```
 
 ### Git 初始化(首次使用)
@@ -576,10 +632,14 @@ git push -u origin main
 
 1. **版本兼容**: 必须使用 Next.js 14.x，不要升级到 15/16（Tailwind CSS v4 兼容问题）
 2. **Tailwind CSS**: 使用 3.4.x 版本
-3. **样式丢失**: 如遇样式问题，删除 `.next` 文件夹后重启开发服务器
-4. **网络问题**: npm install 失败时可多次重试
-5. **路径别名**: 统一使用 `@/` 而非相对路径导入(如 `@/components/ui/button`)
-6. **数据文件**: 所有 JSON 数据文件在 `src/data/` 目录，修改后页面自动更新
+3. **静态导出配置**: 项目使用 `output: 'export'`，这意味着：
+   - 所有页面必须可以在构建时预渲染
+   - 不支持 API Routes、Middleware、ISR
+   - `next/image` 需要配置 `unoptimized: true`（已配置）
+4. **样式丢失**: 如遇样式问题，删除 `.next` 文件夹后重启开发服务器
+5. **网络问题**: npm install 失败时可多次重试或使用国内镜像
+6. **路径别名**: 统一使用 `@/` 而非相对路径导入(如 `@/components/ui/button`)
+7. **数据文件**: 所有 JSON 数据文件在 `src/data/` 目录，修改后页面自动更新
 
 ---
 

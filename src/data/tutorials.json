@@ -1,5 +1,15 @@
 [
   {
+    "id": "claudecode-practical-guide",
+    "title": "《Claude Code 小白实战宝典》完整教程",
+    "description": "一文说清安装配置+开发+插件技能+上线部署，从零开始的完整实战指南",
+    "thumbnail": "/images/tutorials/claudecode.png",
+    "duration": "图文教程",
+    "category": "Claude Code",
+    "type": "link",
+    "url": "https://mp.weixin.qq.com/s/tPN_me01r1fYcfPXmJCg8A"
+  },
+  {
     "id": "claudecode-guide",
     "title": "Claude Code 快速上手实践指南",
     "description": "安装配置、MCP使用、Skill开发，从零到开发H5单词游戏全流程",
