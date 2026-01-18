@@ -38,13 +38,5 @@
     "type": "link",
     "url": "https://notebooklm.google.com",
     "description": "Google出品AI笔记工具，学习教育神器"
-  },
-  {
-    "id": "nanobanana",
-    "title": "NanoBanana Pro",
-    "thumbnail": "/images/tools/nanobanana.png",
-    "type": "link",
-    "url": "https://nanobanana.com",
-    "description": "AI图片生成工具，儿童教育新质生产力"
   }
 ]

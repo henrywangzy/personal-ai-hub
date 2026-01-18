@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Play, Clock, ExternalLink } from "lucide-react";
+import { Clock, ExternalLink } from "lucide-react";
 import tutorialsData from "@/data/tutorials.json";
 import { Tutorial } from "@/types";
 
@@ -24,10 +24,7 @@ export default function TutorialsPage() {
     <div className="container px-4 py-8">
       {/* 页面标题 */}
       <div className="mb-8">
-        <h1 className="text-2xl md:text-3xl font-bold mb-2">AI教程</h1>
-        <p className="text-muted-foreground">
-          精选 AI 视频教程，助你快速上手
-        </p>
+        <h1 className="text-2xl md:text-3xl font-bold">AI教程</h1>
       </div>
 
       {/* 教程网格 */}
@@ -55,19 +52,9 @@ export default function TutorialsPage() {
                       className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
-                    {/* 播放按钮覆盖层 */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-                      <div className="h-14 w-14 rounded-full bg-primary/80 flex items-center justify-center group-hover:bg-primary transition-colors">
-                        <Play className="h-6 w-6 text-white ml-1" />
-                      </div>
-                    </div>
                   </>
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="h-14 w-14 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                      <Play className="h-6 w-6 text-primary ml-1" />
-                    </div>
-                  </div>
+                  <div className="w-full h-full" />
                 )}
                 {/* 分类标签 */}
                 <span
