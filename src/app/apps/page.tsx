@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Gamepad2, ExternalLink } from "lucide-react";
 import appsData from "@/data/apps.json";
 import { App } from "@/types";
@@ -44,18 +45,30 @@ export default function AppsPage() {
               className="group block rounded-xl border bg-card overflow-hidden hover:shadow-md transition-all duration-200"
             >
               {/* 缩略图 */}
-              <div className="relative aspect-square bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center">
-                <Gamepad2 className="h-12 w-12 text-primary/40 group-hover:text-primary/60 transition-colors" />
+              <div className="relative aspect-square bg-gradient-to-br from-primary/5 to-primary/10 overflow-hidden">
+                {app.thumbnail ? (
+                  <Image
+                    src={app.thumbnail}
+                    alt={app.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Gamepad2 className="h-12 w-12 text-primary/40 group-hover:text-primary/60 transition-colors" />
+                  </div>
+                )}
                 {/* 分类标签 */}
                 <span
-                  className={`absolute top-2 left-2 text-xs px-2 py-1 rounded-full ${
+                  className={`absolute top-2 left-2 text-xs px-2 py-1 rounded-full z-10 ${
                     categoryColors[app.category] || "bg-gray-100 text-gray-700"
                   }`}
                 >
                   {app.category}
                 </span>
                 {isExternal && (
-                  <ExternalLink className="absolute top-2 right-2 h-4 w-4 text-muted-foreground" />
+                  <ExternalLink className="absolute top-2 right-2 h-4 w-4 text-muted-foreground z-10" />
                 )}
               </div>
 

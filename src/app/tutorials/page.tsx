@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Play, Clock, ExternalLink } from "lucide-react";
 import tutorialsData from "@/data/tutorials.json";
 import { Tutorial } from "@/types";
@@ -44,20 +45,40 @@ export default function TutorialsPage() {
               className="group block rounded-xl border bg-card overflow-hidden hover:shadow-md transition-all duration-200"
             >
               {/* 缩略图 */}
-              <div className="relative aspect-video bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center">
-                <div className="h-14 w-14 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                  <Play className="h-6 w-6 text-primary ml-1" />
-                </div>
+              <div className="relative aspect-video bg-gradient-to-br from-primary/5 to-primary/10 overflow-hidden">
+                {tutorial.thumbnail ? (
+                  <>
+                    <Image
+                      src={tutorial.thumbnail}
+                      alt={tutorial.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    {/* 播放按钮覆盖层 */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                      <div className="h-14 w-14 rounded-full bg-primary/80 flex items-center justify-center group-hover:bg-primary transition-colors">
+                        <Play className="h-6 w-6 text-white ml-1" />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="h-14 w-14 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <Play className="h-6 w-6 text-primary ml-1" />
+                    </div>
+                  </div>
+                )}
                 {/* 分类标签 */}
                 <span
-                  className={`absolute top-2 left-2 text-xs px-2 py-1 rounded-full ${
+                  className={`absolute top-2 left-2 text-xs px-2 py-1 rounded-full z-10 ${
                     categoryColors[tutorial.category] || "bg-gray-100 text-gray-700"
                   }`}
                 >
                   {tutorial.category}
                 </span>
                 {/* 时长标签 */}
-                <span className="absolute bottom-2 right-2 text-xs px-2 py-1 rounded bg-black/70 text-white flex items-center gap-1">
+                <span className="absolute bottom-2 right-2 text-xs px-2 py-1 rounded bg-black/70 text-white flex items-center gap-1 z-10">
                   <Clock className="h-3 w-3" />
                   {tutorial.duration}
                 </span>

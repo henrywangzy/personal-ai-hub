@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Layers, ExternalLink } from "lucide-react";
 import flashcardsData from "@/data/flashcards.json";
 import { Flashcard } from "@/types";
@@ -44,18 +45,30 @@ export default function FlashcardsPage() {
               className="group block rounded-xl border bg-card overflow-hidden hover:shadow-md transition-all duration-200"
             >
               {/* 缩略图 */}
-              <div className="relative aspect-video bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center">
-                <Layers className="h-12 w-12 text-primary/40" />
+              <div className="relative aspect-video bg-gradient-to-br from-primary/5 to-primary/10 overflow-hidden">
+                {card.thumbnail ? (
+                  <Image
+                    src={card.thumbnail}
+                    alt={card.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Layers className="h-12 w-12 text-primary/40" />
+                  </div>
+                )}
                 {/* 分类标签 */}
                 <span
-                  className={`absolute top-2 left-2 text-xs px-2 py-1 rounded-full ${
+                  className={`absolute top-2 left-2 text-xs px-2 py-1 rounded-full z-10 ${
                     categoryColors[card.category] || "bg-gray-100 text-gray-700"
                   }`}
                 >
                   {card.category}
                 </span>
                 {/* 数量标签 */}
-                <span className="absolute top-2 right-2 text-xs px-2 py-1 rounded-full bg-background/80 backdrop-blur-sm">
+                <span className="absolute top-2 right-2 text-xs px-2 py-1 rounded-full bg-background/80 backdrop-blur-sm z-10">
                   {card.count} 张
                 </span>
               </div>
