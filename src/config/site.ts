@@ -16,5 +16,6 @@ export const navItems: NavItem[] = [
   { title: "H5应用", href: "/apps" },
   { title: "知识库", href: "/blog" },
   { title: "工具集", href: "/tools" },
+  { title: "Skills资源", href: "/skills-resources" },
   { title: "关于我", href: "/about" },
 ];

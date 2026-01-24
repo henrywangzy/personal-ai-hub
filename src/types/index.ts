@@ -84,3 +84,12 @@ export interface SiteConfig {
     email?: string;
   };
 }
+
+// Skills 资源平台数据模型
+export interface SkillsResource {
+  id: string;
+  title: string;
+  description: string;
+  url: string;
+  icon: string;  // Lucide icon 名称
+}

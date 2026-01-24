@@ -1,0 +1,44 @@
+[
+  {
+    "id": "skillsmp",
+    "title": "SkillsMP",
+    "description": "量大管饱的老大哥",
+    "url": "https://skillsmp.com",
+    "icon": "package"
+  },
+  {
+    "id": "skills-pub",
+    "title": "Skills.pub",
+    "description": "中文友好的精选市场",
+    "url": "https://skills.pub",
+    "icon": "star"
+  },
+  {
+    "id": "anthropics-skills",
+    "title": "Anthropics Skills",
+    "description": "官方出品必属精品",
+    "url": "https://github.com/anthropics/skills",
+    "icon": "github"
+  },
+  {
+    "id": "awesome-claude-skills",
+    "title": "Awesome Claude Skills",
+    "description": "社区精选合集",
+    "url": "https://github.com/topics/claude-skills",
+    "icon": "heart"
+  },
+  {
+    "id": "superpowers",
+    "title": "Superpowers",
+    "description": "开发工作流框架",
+    "url": "https://github.com/obra/superpowers",
+    "icon": "zap"
+  },
+  {
+    "id": "claude-skills-org",
+    "title": "Claude Skills.org",
+    "description": "综合学习平台",
+    "url": "https://claude-skills.org",
+    "icon": "book-open"
+  }
+]
