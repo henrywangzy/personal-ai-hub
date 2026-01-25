@@ -13,6 +13,14 @@ interface FeaturedPost {
 
 const featuredPosts: FeaturedPost[] = [
   {
+    id: "skills-2026-guide",
+    title: "2026年Skills元年：别再瞎装Skills了，新手如何从8万+资源中找到宝藏",
+    description: "8万+ Skills 资源如何筛选？本文提供完整的新手指南，帮助你在海量资源中找到真正实用的宝藏技能",
+    date: "2026-01-25",
+    tags: ["Skills", "Claude Code", "AI工具"],
+    url: "https://mp.weixin.qq.com/s/tdN-DllJbiVZ_DvWbAx4Jw",
+  },
+  {
     id: "claudecode-practical-guide",
     title: "《Claude Code 小白实战宝典》完整教程",
     description: "一文说清安装配置+开发+插件技能+上线部署，从零开始的完整实战指南",
@@ -27,14 +35,6 @@ const featuredPosts: FeaturedPost[] = [
     date: "2025-01-10",
     tags: ["NotebookLM", "AI教育"],
     url: "https://mp.weixin.qq.com/s/5pHKIM02aVEMGzC_E1hSjQ",
-  },
-  {
-    id: "nanobanana-education",
-    title: "NanoBanana Pro：别把它当玩具，一文教你变成儿童教育新质生产力",
-    description: "12种案例提示词：汉语拼音、古诗词、立体几何、英语短语可视化教学",
-    date: "2025-01-08",
-    tags: ["NanoBanana", "AI绘图"],
-    url: "https://mp.weixin.qq.com/s/U3dXsoj4Col8yTZd6kcSGg",
   },
 ];
 
